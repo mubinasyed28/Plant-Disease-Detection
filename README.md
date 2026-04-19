@@ -114,18 +114,3 @@ Insights into the mission and technology behind PlantGuard AI.
 
 If you don't have your own plant images, you can use the samples provided in the `test_images` folder. Each image is labeled or categorized to help you verify the model's accuracy.
 
----
-
-## 🤝 Contribution
-
-Contributions are welcome! Please follow these steps:
-1. Fork the repository.
-2. Create a feature branch (`git checkout -b feature-name`).
-3. Commit your changes and ensure they are well-tested.
-4. Open a Pull Request.
-
----
-
-## 📜 License
-
-This project is open-source and intended for educational and research purposes.
