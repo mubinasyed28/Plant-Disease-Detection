@@ -1,0 +1,178 @@
+{% extends 'base.html' %}
+
+{% block pagetitle %}About – PlantGuard AI{% endblock pagetitle %}
+
+{% block body %}
+<style>
+    .about-hero {
+        background: linear-gradient(135deg, #042908 0%, #073d0c 100%);
+        color: #e8f5e9;
+        padding: 64px 24px 48px;
+        text-align: center;
+    }
+    .about-hero h1 {
+        font-size: 2.6rem;
+        font-weight: 700;
+        color: #69f0ae;
+        margin-bottom: 12px;
+    }
+    .about-hero p {
+        font-size: 1.1rem;
+        color: #a5d6a7;
+        max-width: 600px;
+        margin: 0 auto;
+        line-height: 1.7;
+    }
+
+    .about-section {
+        max-width: 900px;
+        margin: 48px auto;
+        padding: 0 24px;
+        color: #1b5e20;
+    }
+    .about-section h2 {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #033a0b;
+        margin-bottom: 12px;
+        border-left: 4px solid #43a047;
+        padding-left: 12px;
+    }
+    .about-section p {
+        font-size: 0.97rem;
+        line-height: 1.8;
+        color: #2e7d32;
+        margin-bottom: 32px;
+    }
+
+    .cards-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+        margin-bottom: 48px;
+    }
+    .info-card {
+        background: linear-gradient(145deg, #e8f5e9, #f1f8e9);
+        border: 1px solid #c8e6c9;
+        border-radius: 16px;
+        padding: 28px 24px;
+        flex: 1 1 220px;
+        max-width: 260px;
+        text-align: center;
+        box-shadow: 0 4px 16px rgba(4,41,8,0.08);
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .info-card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 8px 24px rgba(4,41,8,0.14);
+    }
+    .info-card .icon {
+        font-size: 2.4rem;
+        margin-bottom: 12px;
+    }
+    .info-card h3 {
+        font-size: 1rem;
+        font-weight: 700;
+        color: #1b5e20;
+        margin-bottom: 8px;
+    }
+    .info-card p {
+        font-size: 0.85rem;
+        color: #388e3c;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    .cta-block {
+        background: linear-gradient(135deg, #042908, #073d0c);
+        color: #c8e6c9;
+        border-radius: 20px;
+        padding: 40px 32px;
+        text-align: center;
+        margin: 0 24px 60px;
+        max-width: 860px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cta-block h2 {
+        color: #69f0ae;
+        font-size: 1.6rem;
+        margin-bottom: 10px;
+    }
+    .cta-block p {
+        color: #a5d6a7;
+        margin-bottom: 24px;
+        font-size: 0.97rem;
+    }
+    .cta-block a {
+        display: inline-block;
+        background: #43a047;
+        color: white;
+        text-decoration: none;
+        padding: 12px 32px;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 0.97rem;
+        transition: background 0.2s, transform 0.15s;
+    }
+    .cta-block a:hover {
+        background: #2e7d32;
+        transform: scale(1.04);
+    }
+</style>
+
+<!-- Hero -->
+<div class="about-hero">
+    <h1>🌿 About PlantGuard AI</h1>
+    <p>An intelligent plant disease detection platform that empowers farmers and gardeners with the power of deep learning — instantly identify crop diseases and take action.</p>
+</div>
+
+<!-- Mission -->
+<div class="about-section">
+    <h2>🎯 Our Mission</h2>
+    <p>
+        PlantGuard AI was built to solve one of agriculture's biggest challenges — early and accurate plant disease identification.
+        By combining convolutional neural networks trained on thousands of plant images, we give farmers a fast and reliable tool
+        to diagnose diseases right from their smartphone, without any expert knowledge required.
+    </p>
+
+    <h2>🔬 How the Technology Works</h2>
+    <p>
+        Our AI engine uses a deep convolutional neural network (CNN) trained on the PlantVillage dataset covering 39 different
+        plant disease classes. When you upload a photo of a leaf, the model analyzes visual features like color patterns,
+        texture irregularities, and lesions to classify the disease with high accuracy — all in real time.
+    </p>
+</div>
+
+<!-- Feature Cards -->
+<div class="cards-row">
+    <div class="info-card">
+        <div class="icon">🤖</div>
+        <h3>Deep Learning AI</h3>
+        <p>CNN model trained on 87,000+ plant images across 39 disease categories.</p>
+    </div>
+    <div class="info-card">
+        <div class="icon">⚡</div>
+        <h3>Instant Results</h3>
+        <p>Get a diagnosis and treatment recommendations in seconds.</p>
+    </div>
+    <div class="info-card">
+        <div class="icon">💊</div>
+        <h3>Treatment Guidance</h3>
+        <p>Paired supplement and remedy suggestions for every detected disease.</p>
+    </div>
+    <div class="info-card">
+        <div class="icon">🌾</div>
+        <h3>Supports 14 Crops</h3>
+        <p>Tomato, potato, corn, grape, apple, strawberry, and many more.</p>
+    </div>
+</div>
+
+<!-- CTA -->
+<div class="cta-block">
+    <h2>Ready to protect your crops?</h2>
+    <p>Upload a plant photo and let our AI diagnose it — free, fast, and accurate.</p>
+    <a href="/index">🚀 Try the AI Engine</a>
+</div>
+{% endblock body %}
